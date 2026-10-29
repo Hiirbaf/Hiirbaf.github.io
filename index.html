@@ -1,190 +1,192 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TU-NOMBRE · sitio personal</title>
-<meta name="description" content="Sitio personal de TU-NOMBRE">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>~ TU-NOMBRE's homepage ~</title>
 <style>
-:root{
-  --bg:#191529; --panel:#241e3d; --panel2:#2e2650; --line:#6a5bb5;
-  --text:#ece8ff; --muted:#a79fd0; --a:#5fd3b0; --b:#ff5fa2;
-  --head:'VT323','Courier New',monospace; --body:Verdana,Geneva,sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 var(--body);
-  background-image:radial-gradient(var(--panel) 1px,transparent 1px);background-size:18px 18px}
-a{color:var(--a)} a:hover{color:var(--b)}
-h1,h2,h3{font-family:var(--head);font-weight:400;margin:0 0 .4em;line-height:1}
-h1{font-size:3.2rem;color:var(--b)} h2{font-size:2rem;color:var(--a)} h3{font-size:1.5rem}
-.wrap{max-width:1000px;margin:0 auto;padding:16px;display:grid;grid-template-columns:210px 1fr;gap:16px}
-.box{background:var(--panel);border:2px solid var(--line);border-radius:4px;padding:14px;box-shadow:4px 4px 0 #0d0a1a}
-aside nav{display:flex;flex-direction:column;gap:2px}
-aside nav a{font-family:var(--head);font-size:1.4rem;text-decoration:none;color:var(--text);padding:0 8px;border-left:4px solid transparent}
-aside nav a:hover,aside nav a.on{border-color:var(--b);background:var(--panel2);color:var(--a)}
-aside .box+.box{margin-top:16px}
-main>section{display:none} main>section.on{display:block}
-.hero{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.avatar{width:120px;height:120px;border:2px dashed var(--line);display:grid;place-items:center;color:var(--muted);text-align:center;font-size:12px;background:var(--panel2)}
-table.status{width:100%;border-collapse:collapse}
-table.status td{padding:4px 8px;border-bottom:1px dotted var(--line);vertical-align:top}
-table.status td:first-child{color:var(--muted);width:42%}
-.btns{display:flex;flex-wrap:wrap;gap:6px}
-.b88{width:88px;height:31px;display:grid;place-items:center;font:12px var(--head);font-size:16px;text-decoration:none;color:#fff;border:1px solid #fff4;background:linear-gradient(135deg,#6a5bb5,#ff5fa2)}
-.b88:nth-child(2n){background:linear-gradient(135deg,#1f8f78,#5fd3b0);color:#102}
-.b88:nth-child(3n){background:linear-gradient(135deg,#333,#777)}
-.stamp{width:99px;height:56px;border:2px dotted var(--line);display:grid;place-items:center;font-size:11px;color:var(--muted);text-align:center}
-.updates p{margin:.3em 0}.updates b{color:var(--b);font-family:var(--head);font-size:1.2rem;font-weight:400}
-.post{border-bottom:1px dashed var(--line);padding:8px 0}.post small{color:var(--muted)}
-ul.todo{padding-left:1.1em}
-.marq{overflow:hidden;white-space:nowrap;border:1px solid var(--line);margin-bottom:12px;font-family:var(--head);font-size:1.3rem;color:var(--a)}
-.marq span{display:inline-block;padding-left:100%;animation:m 18s linear infinite}
-@keyframes m{to{transform:translateX(-100%)}}
-.tools{font-size:12px;color:var(--muted);margin-top:8px}
-.tools button{font:inherit;background:var(--panel2);color:var(--text);border:1px solid var(--line);cursor:pointer;padding:2px 8px}
-footer{grid-column:1/-1;text-align:center;color:var(--muted);font-size:12px}
-body.crt::after{content:"";position:fixed;inset:0;pointer-events:none;
-  background:repeating-linear-gradient(transparent 0 2px,#0004 2px 3px);z-index:9}
-a:focus-visible,button:focus-visible{outline:2px solid var(--b);outline-offset:2px}
-@media(max-width:720px){.wrap{grid-template-columns:1fr}aside nav{flex-direction:row;flex-wrap:wrap}}
-@media(prefers-reduced-motion:reduce){.marq span{animation:none;padding-left:0}}
+body{margin:0;background:#000 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='%23fff'%3E%3Crect x='10' y='12' width='2' height='2'/%3E%3Crect x='52' y='30' width='2' height='2'/%3E%3Crect x='30' y='66' width='2' height='2'/%3E%3Crect x='70' y='58' width='2' height='2' fill='%23ff4fa3'/%3E%3Crect x='20' y='42' width='2' height='2' fill='%2340e0d0'/%3E%3C/g%3E%3C/svg%3E");
+ color:#e8e8e8;font:14px/1.5 "Comic Sans MS","Comic Neue",Verdana,sans-serif}
+a{color:#40e0d0} a:visited{color:#c58cff} a:hover{color:#ff4fa3;background:#222}
+#page{width:860px;max-width:100%;margin:0 auto;padding:8px}
+.banner{text-align:center;border:3px ridge #ff4fa3;background:#14001f;padding:10px;margin-bottom:8px}
+.banner h1{margin:0;font:bold 36px "Courier New",monospace;color:#ff4fa3;text-shadow:2px 2px #40e0d0}
+.rainbow{height:4px;border:0;margin:6px 0;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,violet)}
+.cols{display:flex;gap:8px;align-items:flex-start}
+.side{width:190px;flex:none}
+.main{flex:1;min-width:0}
+.win{border:2px outset #888;background:#111;margin-bottom:8px}
+.win>h2{margin:0;padding:2px 6px;font:bold 13px Verdana;background:linear-gradient(90deg,#5b00a8,#ff4fa3);color:#fff}
+.win>div{padding:8px}
+.win ul{margin:0;padding-left:18px}
+.blink{animation:b 1s steps(2) infinite}@keyframes b{50%{visibility:hidden}}
+.marq{border:1px solid #40e0d0;overflow:hidden;white-space:nowrap;color:#40e0d0;margin-bottom:8px}
+.marq span{display:inline-block;padding-left:100%;animation:m 16s linear infinite}@keyframes m{to{transform:translateX(-100%)}}
+table.s{width:100%;border-collapse:collapse}
+table.s td{border:1px dotted #666;padding:3px 6px}
+table.s td:first-child{color:#ff4fa3;white-space:nowrap}
+.btn88{display:inline-block;width:88px;height:31px;line-height:31px;text-align:center;font:bold 11px Verdana;color:#fff!important;text-decoration:none;border:1px solid #fff;margin:2px;background:linear-gradient(#ff4fa3,#5b00a8)}
+.btn88.g{background:linear-gradient(#40e0d0,#006b60)}
+.stamp{display:inline-block;width:99px;height:56px;border:1px dashed #888;margin:2px;font-size:10px;text-align:center;line-height:56px;color:#888}
+.under{text-align:center;color:#ffd800;font:bold 12px "Courier New"}
+.counter{font:bold 18px "Courier New";background:#000;color:#0f0;border:2px inset #888;padding:0 6px;display:inline-block;letter-spacing:3px}
+/* drawbox */
+#cv{display:block;width:100%;max-width:400px;height:auto;aspect-ratio:4/3;background:#fff;border:2px inset #888;touch-action:none;cursor:crosshair}
+.tb{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:6px 0}
+.sw{width:22px;height:22px;border:2px outset #888;padding:0;cursor:pointer}
+.sw.on{outline:2px solid #ff4fa3}
+button.t,input.t{font:12px Verdana;background:#222;color:#fff;border:2px outset #888;cursor:pointer;padding:2px 8px}
+button.t:active{border-style:inset}
+#msg{font-size:12px;color:#ffd800;min-height:1.4em}
+.gal{display:flex;flex-wrap:wrap;gap:6px}
+.gal figure{margin:0;width:120px;font-size:11px;text-align:center}
+.gal img{width:120px;border:2px solid #888;background:#fff}
+footer{text-align:center;font-size:11px;color:#888;margin:10px 0}
+@media(max-width:700px){.cols{flex-direction:column}.side{width:100%}}
+@media(prefers-reduced-motion:reduce){.marq span{animation:none;padding-left:0}.blink{animation:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div id="page">
 
-<aside>
-  <div class="box">
-    <nav id="nav">
-      <a href="#inicio">inicio</a>
-      <a href="#proyectos">proyectos</a>
-      <a href="#blog">blog</a>
-      <a href="#listas">listas</a>
-      <a href="#links">links</a>
-      <a href="#contacto">contacto</a>
-    </nav>
-  </div>
-  <div class="box">
-    <h3>ajustes</h3>
-    <div class="tools">
-      <button id="crt" aria-pressed="false">crt: off</button>
-    </div>
-  </div>
-</aside>
+<div class="banner">
+  <h1>~* TU-NOMBRE *~</h1>
+  <div>♥ bienvenid@ a mi rinconcito de internet ♥</div>
+</div>
 
-<main>
-  <!-- INICIO -->
-  <section id="inicio" class="box">
-    <div class="marq"><span>★ bienvenid@ a mi rincón de internet ★ sitio en construcción ★ volvé pronto ★</span></div>
-    <div class="hero">
-      <div class="avatar">tu foto<br>o dibujo<br>(120×120)</div>
-      <div>
-        <h1>TU-NOMBRE</h1>
-        <h3>EDAD • PRONOMBRES • PAÍS</h3>
-        <h3>desarrollo Android &amp; apps</h3>
-        <h3>tu otro interés &amp;</h3>
-      </div>
-    </div>
-    <hr style="border-color:var(--line)">
-    <table class="status">
-      <tr><td>ánimo:</td><td>🙂 (cambialo a mano)</td></tr>
-      <tr><td>jugando:</td><td>…</td></tr>
-      <tr><td>escuchando:</td><td>…</td></tr>
-      <tr><td>leyendo:</td><td>…</td></tr>
-      <tr><td>mirando:</td><td>…</td></tr>
-      <tr><td>obsesión actual:</td><td>…</td></tr>
-    </table>
-    <hr style="border-color:var(--line)">
-    <h3>stamps</h3>
-    <div class="btns">
-      <div class="stamp">tu stamp 1</div><div class="stamp">tu stamp 2</div><div class="stamp">tu stamp 3</div>
-    </div>
-    <h3 style="margin-top:12px">mi botón</h3>
-    <div class="btns"><a class="b88" href="#">TU-SITIO</a></div>
-    <p class="tools">Copiá este botón y pedí que te linkeen: <code>&lt;a href="https://TUUSUARIO.github.io"&gt;TU-SITIO&lt;/a&gt;</code></p>
-    <hr style="border-color:var(--line)">
-    <h3>updates</h3>
-    <div class="updates">
-      <p><b>01/01/2027</b> – salió el sitio. ¡Primera versión!</p>
-      <p><b>00/00/0000</b> – acá va tu próximo cambio.</p>
-    </div>
-    <h3 style="margin-top:12px">to do</h3>
-    <ul class="todo">
-      <li>subir mis proyectos</li>
-      <li>escribir el primer post</li>
-      <li>armar la página de links</li>
+<div class="marq"><span>★ sitio en construcción ★ dibujá algo en la drawbox y mandámelo ★ linkeame y te linkeo de vuelta ★</span></div>
+
+<div class="cols">
+<div class="side">
+  <div class="win"><h2>:: menú ::</h2><div>
+    <ul>
+      <li><a href="#top">inicio</a></li>
+      <li><a href="#sobre">sobre mí</a></li>
+      <li><a href="#proyectos">proyectos</a></li>
+      <li><a href="#drawbox">drawbox</a></li>
+      <li><a href="#galeria">galería</a></li>
+      <li><a href="#links">links</a></li>
+      <li><a href="#contacto">contacto</a></li>
     </ul>
-  </section>
+  </div></div>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="box">
-    <h2>proyectos</h2>
-    <div class="post"><h3>Proyecto 1</h3><small>Android · Kotlin</small><p>Descripción corta. <a href="#">repositorio</a></p></div>
-    <div class="post"><h3>Proyecto 2</h3><small>extensión · plugin</small><p>Descripción corta. <a href="#">repositorio</a></p></div>
-  </section>
+  <div class="win"><h2>:: estado ::</h2><div>
+    <table class="s">
+      <tr><td>ánimo</td><td>:3</td></tr>
+      <tr><td>jugando</td><td>…</td></tr>
+      <tr><td>leyendo</td><td>…</td></tr>
+      <tr><td>escuchando</td><td>…</td></tr>
+    </table>
+  </div></div>
 
-  <!-- BLOG -->
-  <section id="blog" class="box">
-    <h2>blog</h2>
-    <article class="post"><h3>Título del post</h3><small>00/00/0000</small><p>Escribí acá tu texto.</p></article>
-    <article class="post"><h3>Otro post</h3><small>00/00/0000</small><p>Texto de ejemplo.</p></article>
-  </section>
+  <div class="win"><h2>:: visitas ::</h2><div style="text-align:center">
+    <span class="counter">000123</span><br>
+    <small>(contador de adorno, cambialo a mano)</small>
+  </div></div>
 
-  <!-- LISTAS -->
-  <section id="listas" class="box">
-    <h2>listas</h2>
-    <h3>mis animes / mangas favoritos</h3>
-    <ul><li>…</li><li>…</li></ul>
-    <h3>mis juegos favoritos</h3>
-    <ul><li>…</li><li>…</li></ul>
-  </section>
+  <div class="win"><h2>:: mi botón ::</h2><div style="text-align:center">
+    <a class="btn88" href="#">TU-SITIO</a>
+  </div></div>
+</div>
 
-  <!-- LINKS -->
-  <section id="links" class="box">
-    <h2>links</h2>
-    <h3>vecinos</h3>
-    <div class="btns"><a class="b88" href="#">sitio 1</a><a class="b88" href="#">sitio 2</a><a class="b88" href="#">sitio 3</a></div>
-    <h3 style="margin-top:12px">otros sitios que me gustan</h3>
-    <div class="btns"><a class="b88" href="#">sitio 4</a><a class="b88" href="#">sitio 5</a></div>
-  </section>
+<div class="main" id="top">
+  <div class="win" id="sobre"><h2>:: sobre mí ::</h2><div>
+    <p><b>TU-NOMBRE</b> · EDAD · PRONOMBRES · PAÍS</p>
+    <p>Escribí acá algo sobre vos: qué hacés, qué te gusta, qué estás aprendiendo.</p>
+    <p class="under"><span class="blink">⚠</span> SITIO EN CONSTRUCCIÓN <span class="blink">⚠</span></p>
+    <hr class="rainbow">
+    <b>stamps:</b><br>
+    <span class="stamp">stamp 1</span><span class="stamp">stamp 2</span><span class="stamp">stamp 3</span>
+  </div></div>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="box">
-    <h2>contacto</h2>
-    <p>Mail: <a href="mailto:tu@mail.com">tu@mail.com</a></p>
-    <p>GitHub: <a href="https://github.com/TUUSUARIO">TUUSUARIO</a></p>
-  </section>
-</main>
+  <div class="win" id="proyectos"><h2>:: proyectos ::</h2><div>
+    <ul>
+      <li><b>Proyecto 1</b> – descripción corta. <a href="#">repo</a></li>
+      <li><b>Proyecto 2</b> – descripción corta. <a href="#">repo</a></li>
+    </ul>
+  </div></div>
 
-<footer>TU-NOMBRE © 2026 – para siempre · hecho a mano con HTML</footer>
+  <div class="win" id="drawbox"><h2>:: drawbox – ¡dibujá algo para mí! ::</h2><div>
+    <canvas id="cv" width="400" height="300"></canvas>
+    <div class="tb" id="pal"></div>
+    <div class="tb">
+      <label>grosor <input id="sz" type="range" min="1" max="30" value="4"></label>
+      <button class="t" id="eraser">borrador</button>
+      <button class="t" id="undo">deshacer</button>
+      <button class="t" id="clear">borrar todo</button>
+    </div>
+    <div class="tb">
+      <input class="t" id="who" placeholder="tu nombre (opcional)" maxlength="30">
+      <button class="t" id="send">enviar dibujo</button>
+      <button class="t" id="save">bajar PNG</button>
+    </div>
+    <div id="msg" role="status"></div>
+  </div></div>
+
+  <div class="win" id="galeria"><h2>:: galería de dibujos ::</h2><div>
+    <p>Acá pongo los dibujos que me mandan. (Agregá cada imagen en <code>dibujos/</code> y un &lt;figure&gt; abajo.)</p>
+    <div class="gal">
+      <figure><img alt="dibujo de ejemplo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='90'%3E%3Crect width='120' height='90' fill='%23fff'/%3E%3Ctext x='60' y='50' text-anchor='middle' font-size='12'%3Etu dibujo aquí%3C/text%3E%3C/svg%3E"><figcaption>anónim@</figcaption></figure>
+    </div>
+  </div></div>
+
+  <div class="win" id="links"><h2>:: links ::</h2><div>
+    <a class="btn88" href="#">sitio 1</a><a class="btn88 g" href="#">sitio 2</a><a class="btn88" href="#">sitio 3</a><a class="btn88 g" href="#">sitio 4</a>
+  </div></div>
+
+  <div class="win" id="contacto"><h2>:: contacto ::</h2><div>
+    <p>Mail: <a href="mailto:tu@mail.com">tu@mail.com</a><br>GitHub: <a href="https://github.com/TUUSUARIO">TUUSUARIO</a></p>
+  </div></div>
+</div>
+</div>
+
+<footer>TU-NOMBRE © 2026 – hecho a mano con HTML y amor</footer>
 </div>
 
 <script>
-// Navegación por hash: cada sección es una "página"
-const secs=[...document.querySelectorAll('main>section')];
-const links=[...document.querySelectorAll('#nav a')];
-function show(){
-  const id=(location.hash||'#inicio').slice(1);
-  const target=secs.find(s=>s.id===id)||secs[0];
-  secs.forEach(s=>s.classList.toggle('on',s===target));
-  links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+target.id));
-}
-addEventListener('hashchange',show);show();
+/* ===== CONFIG ===== */
+// Pegá acá la URL de un webhook de Discord para recibir los dibujos.
+// Si lo dejás vacío, el botón "enviar" baja el PNG para mandarlo a mano.
+const WEBHOOK = "";
 
-// Efecto CRT (se recuerda si el navegador lo permite)
-const btn=document.getElementById('crt');
-function crt(on){
-  document.body.classList.toggle('crt',on);
-  btn.textContent='crt: '+(on?'on':'off');
-  btn.setAttribute('aria-pressed',on);
-  try{localStorage.setItem('crt',on?'1':'0')}catch(e){}
-}
-let saved=false;try{saved=localStorage.getItem('crt')==='1'}catch(e){}
-crt(saved);
-btn.onclick=()=>crt(!document.body.classList.contains('crt'));
+/* ===== DRAWBOX ===== */
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const colors=['#000000','#ffffff','#ff4fa3','#ff3030','#ff9a1f','#ffd800','#33cc55','#40e0d0','#3b6dff','#8a4fff','#8b5a2b','#888888'];
+let color='#000000',erasing=false,drawing=false,last=null,history=[];
+const msg=t=>document.getElementById('msg').textContent=t;
+
+function reset(){ctx.fillStyle='#fff';ctx.fillRect(0,0,cv.width,cv.height);ctx.lineCap='round';ctx.lineJoin='round'}
+reset();
+const pal=document.getElementById('pal');
+colors.forEach((c,i)=>{
+  const b=document.createElement('button');b.className='sw'+(i?'':' on');b.style.background=c;b.title=c;b.setAttribute('aria-label','color '+c);
+  b.onclick=()=>{color=c;erasing=false;pal.querySelectorAll('.sw').forEach(x=>x.classList.remove('on'));b.classList.add('on')};
+  pal.appendChild(b);
+});
+function pos(e){const r=cv.getBoundingClientRect();return{x:(e.clientX-r.left)*cv.width/r.width,y:(e.clientY-r.top)*cv.height/r.height}}
+function snap(){history.push(ctx.getImageData(0,0,cv.width,cv.height));if(history.length>30)history.shift()}
+cv.addEventListener('pointerdown',e=>{snap();drawing=true;last=pos(e);cv.setPointerCapture(e.pointerId);dot(last)});
+cv.addEventListener('pointermove',e=>{if(!drawing)return;const p=pos(e);ctx.strokeStyle=erasing?'#fff':color;ctx.lineWidth=+document.getElementById('sz').value;ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p});
+['pointerup','pointercancel'].forEach(ev=>cv.addEventListener(ev,()=>drawing=false));
+function dot(p){ctx.fillStyle=erasing?'#fff':color;ctx.beginPath();ctx.arc(p.x,p.y,+document.getElementById('sz').value/2,0,7);ctx.fill()}
+document.getElementById('eraser').onclick=()=>{erasing=!erasing;msg(erasing?'borrador activado':'pincel activado')};
+document.getElementById('undo').onclick=()=>{const h=history.pop();if(h)ctx.putImageData(h,0,0)};
+document.getElementById('clear').onclick=()=>{snap();reset()};
+function download(){const a=document.createElement('a');a.download='dibujo.png';a.href=cv.toDataURL('image/png');a.click()}
+document.getElementById('save').onclick=download;
+document.getElementById('send').onclick=()=>{
+  if(!WEBHOOK){download();msg('Guardé el PNG. Mandámelo por mail o redes :)');return}
+  msg('enviando…');
+  cv.toBlob(async blob=>{
+    const f=new FormData();
+    const who=document.getElementById('who').value.trim()||'anónim@';
+    f.append('content','Nuevo dibujo de: '+who);
+    f.append('file',blob,'dibujo.png');
+    try{const r=await fetch(WEBHOOK,{method:'POST',body:f});msg(r.ok?'¡Gracias! Dibujo enviado ♥':'No se pudo enviar ('+r.status+').')}
+    catch(e){msg('No se pudo enviar. Probá bajar el PNG.')}
+  },'image/png');
+};
 </script>
 </body>
 </html>
