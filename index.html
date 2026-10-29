@@ -1,134 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,900|PT+Sans+Narrow|Yantramanav:400,900|Roboto:900,400|Bangers|Krona+One|Nunito:400,900|Frank+Ruhl+Libre:400,900|Oswald:400,900|Source+Serif+Pro|Work+Sans:400,900|Open+Sans|Raleway|Lato|Passion+One|Lateef|Crimson+Text|Baloo+Paaji+2|Jost|Oswald|Montserrat|Lexend+Deca|Bungee+Shade|Rubik|Inter:400,900|Bebas+Neue|Syncopate:400,700|VT323:400,900|Poppins:400,900|Fredoka+One:400,900|Staatliches:400,900|Redacted+Script:400,900|Rubik+Pixels:400,900|Cute+Font:400,900|Kosugi+Maru:400,900|Darumadrop+One:400,900|Kaisei+Decol:400,900|Playfair+Display:400,900|Rubik+Doodle+Shadow:400,900|Shadows+Into+Light:400,900|M+PLUS+1:400,900|Zeyada:400,900|Rock+Salt:400,900|Leckerli+One:400,900|Space+Mono:400,900|Finger+Paint:400,900|EB+Garamond:400,700" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/konva@8.3.2/konva.min.js"></script>
-    <link href="https://straw.page/min/?g=els&n=3139" rel="stylesheet"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://straw.page/apple-touch-icon.png?v=4">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://straw.page/favicon-32x32.png?v=4">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://straw.page/favicon-16x16.png?v=4">
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" data-cf-beacon="cwpqPhM52McDWNGARVApIzlwF8ahEFVZlr9rxKfadrU-7OKm4huZzQAFwH6XgzBHhSpm-Tf_wbkJWwVcHk9cSQFeGDI_SI_3T-IaYriVXO7aqMY4a8Vhx4lV5I8oBXOHahCiZgPgWD4zaNf23xZapN70TU_Qo3p5KK7ZPM0Ew9gHHrLCsfj2yYV5QBzSxVM1aVFkdNZT9i2ivjRLNyrJSHuOPqOqe25s8hw70zcsIA"></script>
-    <script defer src="https://notebook.straw.page" data-website-id="8c7c9f37-aee0-4f9e-ab2c-24ce322912d5"></script>
-    
-    <meta property="twitter:title" content="milliesilly's strawpage" />
-    <meta property="twitter:description" content="milliesilly's strawpage" />
-    <meta property="og:image" content="https://strawcdn.com/capture/pics/milliesilly.straw.page.jpg?v=4858" />
-    <meta name="twitter:title" content="milliesilly's strawpage">
-    <meta name="twitter:description" content="Made with StrawPage">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://strawcdn.com/capture/pics/milliesilly.straw.page.jpg?v=3883" />
-    <meta name="straw:user" content="milliesilly"/>
-    
-    <link rel="stylesheet" href="styles.css">
-    <title>milliesilly's strawpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TU-NOMBRE · sitio personal</title>
+<meta name="description" content="Sitio personal de TU-NOMBRE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#191529; --panel:#241e3d; --panel2:#2e2650; --line:#6a5bb5;
+  --text:#ece8ff; --muted:#a79fd0; --a:#5fd3b0; --b:#ff5fa2;
+  --head:'VT323','Courier New',monospace; --body:Verdana,Geneva,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 var(--body);
+  background-image:radial-gradient(var(--panel) 1px,transparent 1px);background-size:18px 18px}
+a{color:var(--a)} a:hover{color:var(--b)}
+h1,h2,h3{font-family:var(--head);font-weight:400;margin:0 0 .4em;line-height:1}
+h1{font-size:3.2rem;color:var(--b)} h2{font-size:2rem;color:var(--a)} h3{font-size:1.5rem}
+.wrap{max-width:1000px;margin:0 auto;padding:16px;display:grid;grid-template-columns:210px 1fr;gap:16px}
+.box{background:var(--panel);border:2px solid var(--line);border-radius:4px;padding:14px;box-shadow:4px 4px 0 #0d0a1a}
+aside nav{display:flex;flex-direction:column;gap:2px}
+aside nav a{font-family:var(--head);font-size:1.4rem;text-decoration:none;color:var(--text);padding:0 8px;border-left:4px solid transparent}
+aside nav a:hover,aside nav a.on{border-color:var(--b);background:var(--panel2);color:var(--a)}
+aside .box+.box{margin-top:16px}
+main>section{display:none} main>section.on{display:block}
+.hero{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.avatar{width:120px;height:120px;border:2px dashed var(--line);display:grid;place-items:center;color:var(--muted);text-align:center;font-size:12px;background:var(--panel2)}
+table.status{width:100%;border-collapse:collapse}
+table.status td{padding:4px 8px;border-bottom:1px dotted var(--line);vertical-align:top}
+table.status td:first-child{color:var(--muted);width:42%}
+.btns{display:flex;flex-wrap:wrap;gap:6px}
+.b88{width:88px;height:31px;display:grid;place-items:center;font:12px var(--head);font-size:16px;text-decoration:none;color:#fff;border:1px solid #fff4;background:linear-gradient(135deg,#6a5bb5,#ff5fa2)}
+.b88:nth-child(2n){background:linear-gradient(135deg,#1f8f78,#5fd3b0);color:#102}
+.b88:nth-child(3n){background:linear-gradient(135deg,#333,#777)}
+.stamp{width:99px;height:56px;border:2px dotted var(--line);display:grid;place-items:center;font-size:11px;color:var(--muted);text-align:center}
+.updates p{margin:.3em 0}.updates b{color:var(--b);font-family:var(--head);font-size:1.2rem;font-weight:400}
+.post{border-bottom:1px dashed var(--line);padding:8px 0}.post small{color:var(--muted)}
+ul.todo{padding-left:1.1em}
+.marq{overflow:hidden;white-space:nowrap;border:1px solid var(--line);margin-bottom:12px;font-family:var(--head);font-size:1.3rem;color:var(--a)}
+.marq span{display:inline-block;padding-left:100%;animation:m 18s linear infinite}
+@keyframes m{to{transform:translateX(-100%)}}
+.tools{font-size:12px;color:var(--muted);margin-top:8px}
+.tools button{font:inherit;background:var(--panel2);color:var(--text);border:1px solid var(--line);cursor:pointer;padding:2px 8px}
+footer{grid-column:1/-1;text-align:center;color:var(--muted);font-size:12px}
+body.crt::after{content:"";position:fixed;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(transparent 0 2px,#0004 2px 3px);z-index:9}
+a:focus-visible,button:focus-visible{outline:2px solid var(--b);outline-offset:2px}
+@media(max-width:720px){.wrap{grid-template-columns:1fr}aside nav{flex-direction:row;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.marq span{animation:none;padding-left:0}}
+</style>
 </head>
-<body style="--g: 2.34375; --b: #ffedf4;">
-    <div class="first">
-        <div class="content">
-            <!-- Shape elements -->
-            <div class="element" style="--x: -0.013333333333333334; --y: 25.76; --w: 16.08; --h: 10.64; --r: 0; --s: 1; --bc: #ffffff;" data-uid="nclznovrcz" data-type="shape">
-                <div class="innerShape">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" preserveAspectRatio="none" style="--ns: 0;">
-                        <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
-                    </svg>
-                </div>
-            </div>
-            
-            <div class="element" style="--x: -0.02666666666666667; --y: 0.9733333333333334; --w: 16.08; --h: 8.546666666666667; --r: 0; --s: 1; --bc: #ffffff;" data-uid="nclznovrcz" data-type="shape">
-                <div class="innerShape">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" preserveAspectRatio="none" style="--ns: 0;">
-                        <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
-                    </svg>
-                </div>
-            </div>
-            
-            <!-- Images -->
-            <div class="element" data-image="contain" style="--x: -0.04; --y: -0.29333333333333333; --w: 16.093333333333334; --h: 1.9466666666666668; --r: 0; --s: 1;" data-uid="lizzvybpew" data-type="image">
-                <img src="https://files.strawcdn.com/straw/LsEUnQmcYifEvDMdCBNW.png" draggable="false" loading="lazy">
-            </div>
-            
-            <div class="element" data-image="contain" style="--x: 6.573333333333333; --y: 0.8533333333333334; --w: 8.946666666666667; --h: 9.173333333333334; --r: 0; --s: 1;" data-uid="lxoozgbwwi" data-type="image">
-                <img src="https://files.strawcdn.com/straw/RryxbnIczONMfQMwptOq.png" draggable="false" loading="lazy">
-            </div>
-            
-            <div class="element" data-image="contain" style="--x: -0.18666666666666668; --y: 0.3333333333333333; --w: 9.6; --h: 9.106666666666667; --r: 0; --s: 1;" data-uid="qghuonvljn" data-type="image">
-                <img src="https://files.strawcdn.com/straw/yCqadHNQgtSfWPZBxlVX.png" draggable="false" loading="lazy">
-            </div>
-            
-            <!-- Text elements -->
-            <div class="element" style="--ts: 1.5; --f: Darling Coffee; --co: #febece; --x: 9.826666666666666; --y: 4.08; --w: 2.546666666666667; --h: 1.1733333333333333; --r: 0; --s: 2.3;" data-uid="tzbxjqydvh" data-type="text">
-                <div class="el_content"><p>Millie!</p></div>
-            </div>
-            
-            <div class="element" style="--ts: 1.5; --f: Darling Coffee; --co: #febece; --x: 7.0960009765625; --y: 5.245333251953125; --w: 7.951111111111111; --h: 1; --r: 0; --s: 0.75;" data-uid="cvrlaxnitk" data-type="text">
-                <div class="el_content"><p>Welcome to my strawpage</p></div>
-            </div>
-            
-            <!-- More content continues... -->
-            <!-- (Incluir aquí todos los demás elementos del body) -->
-            
-            <!-- Canvas Gimmick -->
-            <div class="element" style="--x: 0.7133333333333334; --y: 44.613334554036456; --w: 14.813333333333333; --h: 14.639998677571615; --r: 0; --s: 1; --co: #fea5bb;" data-uid="zffwmaxcqe" data-type="gimmick-canvas">
-                <div class="innerCanvas">
-                    <div class="toolbox">
-                        <i class="fas fa-undo"></i>
-                        <div class="canvSizing">
-                            <input type="range" min="2" max="12" step="2" value="4">
-                        </div>
-                        <span class="canvCol"></span>
-                        <input type="color" id="colpick">
-                        <label for="colpick" style="visibility: hidden; position:absolute"></label>
-                    </div>
-                    <div class="picasso">
-                        <canvas></canvas>
-                        <div class="completionCasso">
-                            <button type="button">save your drawing!</button>
-                        </div>
-                    </div>
-                    <div class="sendPicasso">
-                        <button type="button">Send anonymously 🎨🤫</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- AMA Gimmick -->
-            <div class="element" style="--x: 0.72; --y: 60.026668294270834; --w: 14.8; --h: 1; --r: 0; --s: 1; --co: #fea5bb;" data-uid="percizgbve" data-type="gimmick-ama">
-                <div class="innerUhh">
-                    <div class="asker">
-                        <input type="text" placeholder="Ask me something!" maxlength="288">
-                        <div class="askExtra">
-                            <i class="fab fa-spotify"></i>
-                        </div>
-                    </div>
-                    <div class="askerSend">
-                        <button type="button">Send anonymously ✍️🤫</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Spotify Search Modal -->
-        <div class="spotSearch">
-            <i class="fas fa-times closer"></i>
-            <div class="innerSpotSearch">
-                <div class="searchWrap">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search for a song to recommend!">
-                </div>
-                <div class="spotResults"></div>
-            </div>
-        </div>
-        
-        <!-- Color Picker -->
-        <div class="colorPicker"></div>
+<body>
+<div class="wrap">
+
+<aside>
+  <div class="box">
+    <nav id="nav">
+      <a href="#inicio">inicio</a>
+      <a href="#proyectos">proyectos</a>
+      <a href="#blog">blog</a>
+      <a href="#listas">listas</a>
+      <a href="#links">links</a>
+      <a href="#contacto">contacto</a>
+    </nav>
+  </div>
+  <div class="box">
+    <h3>ajustes</h3>
+    <div class="tools">
+      <button id="crt" aria-pressed="false">crt: off</button>
     </div>
-    
-    <script src="https://straw.page/c1d8cde9-d2dd-4d90-8f43-509b7a9ac5d9.js"></script>
-    <script src="script.js"></script>
+  </div>
+</aside>
+
+<main>
+  <!-- INICIO -->
+  <section id="inicio" class="box">
+    <div class="marq"><span>★ bienvenid@ a mi rincón de internet ★ sitio en construcción ★ volvé pronto ★</span></div>
+    <div class="hero">
+      <div class="avatar">tu foto<br>o dibujo<br>(120×120)</div>
+      <div>
+        <h1>TU-NOMBRE</h1>
+        <h3>EDAD • PRONOMBRES • PAÍS</h3>
+        <h3>desarrollo Android &amp; apps</h3>
+        <h3>tu otro interés &amp;</h3>
+      </div>
+    </div>
+    <hr style="border-color:var(--line)">
+    <table class="status">
+      <tr><td>ánimo:</td><td>🙂 (cambialo a mano)</td></tr>
+      <tr><td>jugando:</td><td>…</td></tr>
+      <tr><td>escuchando:</td><td>…</td></tr>
+      <tr><td>leyendo:</td><td>…</td></tr>
+      <tr><td>mirando:</td><td>…</td></tr>
+      <tr><td>obsesión actual:</td><td>…</td></tr>
+    </table>
+    <hr style="border-color:var(--line)">
+    <h3>stamps</h3>
+    <div class="btns">
+      <div class="stamp">tu stamp 1</div><div class="stamp">tu stamp 2</div><div class="stamp">tu stamp 3</div>
+    </div>
+    <h3 style="margin-top:12px">mi botón</h3>
+    <div class="btns"><a class="b88" href="#">TU-SITIO</a></div>
+    <p class="tools">Copiá este botón y pedí que te linkeen: <code>&lt;a href="https://TUUSUARIO.github.io"&gt;TU-SITIO&lt;/a&gt;</code></p>
+    <hr style="border-color:var(--line)">
+    <h3>updates</h3>
+    <div class="updates">
+      <p><b>01/01/2027</b> – salió el sitio. ¡Primera versión!</p>
+      <p><b>00/00/0000</b> – acá va tu próximo cambio.</p>
+    </div>
+    <h3 style="margin-top:12px">to do</h3>
+    <ul class="todo">
+      <li>subir mis proyectos</li>
+      <li>escribir el primer post</li>
+      <li>armar la página de links</li>
+    </ul>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="box">
+    <h2>proyectos</h2>
+    <div class="post"><h3>Proyecto 1</h3><small>Android · Kotlin</small><p>Descripción corta. <a href="#">repositorio</a></p></div>
+    <div class="post"><h3>Proyecto 2</h3><small>extensión · plugin</small><p>Descripción corta. <a href="#">repositorio</a></p></div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="box">
+    <h2>blog</h2>
+    <article class="post"><h3>Título del post</h3><small>00/00/0000</small><p>Escribí acá tu texto.</p></article>
+    <article class="post"><h3>Otro post</h3><small>00/00/0000</small><p>Texto de ejemplo.</p></article>
+  </section>
+
+  <!-- LISTAS -->
+  <section id="listas" class="box">
+    <h2>listas</h2>
+    <h3>mis animes / mangas favoritos</h3>
+    <ul><li>…</li><li>…</li></ul>
+    <h3>mis juegos favoritos</h3>
+    <ul><li>…</li><li>…</li></ul>
+  </section>
+
+  <!-- LINKS -->
+  <section id="links" class="box">
+    <h2>links</h2>
+    <h3>vecinos</h3>
+    <div class="btns"><a class="b88" href="#">sitio 1</a><a class="b88" href="#">sitio 2</a><a class="b88" href="#">sitio 3</a></div>
+    <h3 style="margin-top:12px">otros sitios que me gustan</h3>
+    <div class="btns"><a class="b88" href="#">sitio 4</a><a class="b88" href="#">sitio 5</a></div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="box">
+    <h2>contacto</h2>
+    <p>Mail: <a href="mailto:tu@mail.com">tu@mail.com</a></p>
+    <p>GitHub: <a href="https://github.com/TUUSUARIO">TUUSUARIO</a></p>
+  </section>
+</main>
+
+<footer>TU-NOMBRE © 2026 – para siempre · hecho a mano con HTML</footer>
+</div>
+
+<script>
+// Navegación por hash: cada sección es una "página"
+const secs=[...document.querySelectorAll('main>section')];
+const links=[...document.querySelectorAll('#nav a')];
+function show(){
+  const id=(location.hash||'#inicio').slice(1);
+  const target=secs.find(s=>s.id===id)||secs[0];
+  secs.forEach(s=>s.classList.toggle('on',s===target));
+  links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+target.id));
+}
+addEventListener('hashchange',show);show();
+
+// Efecto CRT (se recuerda si el navegador lo permite)
+const btn=document.getElementById('crt');
+function crt(on){
+  document.body.classList.toggle('crt',on);
+  btn.textContent='crt: '+(on?'on':'off');
+  btn.setAttribute('aria-pressed',on);
+  try{localStorage.setItem('crt',on?'1':'0')}catch(e){}
+}
+let saved=false;try{saved=localStorage.getItem('crt')==='1'}catch(e){}
+crt(saved);
+btn.onclick=()=>crt(!document.body.classList.contains('crt'));
+</script>
 </body>
 </html>
