@@ -1,0 +1,478 @@
+* {box-sizing: border-box;}
+
+
+/*<weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name*/
+
+.geist-<uniquifier> {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.geist-mono-<uniquifier> {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Geist Mono", monospace;
+  font-size: 1em;
+  background-color: #F7F3F2;
+}
+
+
+::selection {
+  background-color: #FFC5DB; /* highlight color */
+  color: #7F0031;           
+}
+
+::-moz-selection { /* For Firefox */
+  background-color: #FFC5DB;
+  color: #7F0031;
+}
+
+
+
+h1
+{font-size:2.4em;
+font-weight: normal;
+margin: 0 0 20px 0;}
+
+h3 {  
+  font-size: 1em;
+  font-size: 1em;
+  opacity:.4;
+  font-weight: normal;
+}
+
+a {color: black; text-decoration:underline; cursor: pointer;}
+
+a:hover{color:#ff0069;}
+
+        /* Main responsive layout */
+        .main-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr minmax(350px, 500px);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .drawbox-section {
+            min-width: 0;
+        }
+
+        .info-section {
+            background-color: none;
+            height: fit-content;
+            margin-bottom: 60px;
+        }
+
+        .info-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .info-section p, .info-section li {
+        }
+        
+        canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+            display:block;
+            margin:0;
+            width: 500px;
+            max-width:100%;
+        }
+
+
+
+
+      .section-header-grid {
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 20px;
+          align-items: start;
+          margin-bottom: 20px;
+      }
+      
+      .section-title {
+          min-width: 0;
+      }
+      
+      .section-image {
+          flex-shrink: 0;
+      }
+      
+      @media (max-width: 900px) {
+          .section-header-grid {
+              grid-template-columns: 1fr;
+              gap: 15px;
+          }
+          
+          .section-image {
+              justify-self: end;
+          }
+      }
+
+
+
+
+
+        #gallery {
+            display: grid;
+            padding: 0 50px;
+            grid-template-columns: repeat(4, 1fr); /* how many columns */
+            column-gap: 20px; /* gap between each gallery item col*/
+            row-gap: 80px; /* gap between each gallery item row*/
+            margin-top: 20px;
+          max-width:none;
+          with: 100%;
+        }
+        
+        .image-container {
+            border: none;
+            padding: 0px;
+            width: 100%; 
+            max-width: none;            
+            text-align: left;
+            background-color: none;
+            box-sizing: border-box;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        
+        .artist-line {
+            font-weight: normal;
+            margin: 4px 0;
+        }
+        
+        .timestamp {
+            margin: 0 0 0 0;
+        }
+        
+        .artist-line a {
+            font-weight: normal;
+            color: black;
+        }
+        
+        .artist-line a:hover {
+            color: #ff0069;
+        }
+        
+        #submission-form {
+            margin: 20px 0;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FFC5DB;
+             width: 500px; /* Same as canvas width */
+             max-width: 100%; 
+            box-sizing: border-box;
+          margin-left:0;
+          margin-right: auto;
+        }
+        
+        #submission-form label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom:5px;
+            font-weight: normal;
+        }
+
+
+          #submission-form label:first-child {
+              margin-top: 0; 
+        }
+        
+        #submission-form input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+          font-size:1em;
+        }
+        
+        #submission-form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff0069;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          font-size:1.3em;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 900px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .info-section {
+                order: -1;
+            }
+            
+        }
+
+        @media (max-width: 600px) {
+            .main-wrapper {
+                padding: 10px;
+            }
+            
+        }
+
+
+
+
+
+.drawing-tools {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin: 0;
+    padding: 10px 0;
+    border: none;
+    border-radius: 0px;
+    background-color: none;
+
+
+        width: 500px; /* Same as canvas width */
+        max-width: 100%;
+        justify-content: space-between;
+}
+
+.tool-group {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 1;
+}
+
+.tool-group label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 140px; /* circle cursor width */
+    height: 10px;
+    background: white;
+    outline: none;
+    border: 1px solid black;
+        border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; 
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; 
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+
+/* Add this CSS for the active tool state */
+.tool-btn.active-tool {
+    background-color: #e0e0ff;
+    color: black;
+    border-color: #6040ff;
+}
+
+.tool-btn.active-tool:hover {
+    background-color: #bebeed;
+}
+
+
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(2, 25px); 
+    grid-template-rows: repeat(2, 25px);   
+    gap: 0; 
+    width: 50px; 
+    height: 50px; 
+}
+
+
+.halftone-btn {
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='2' height='2' fill='%23000'/%3E%3Crect x='3' y='5' width='2' height='2' fill='%23000'/%3E%3C/svg%3E");
+    background-size: 6px 10px;
+    background-repeat: repeat;
+}
+
+
+.color-btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+        display: block;  
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+    z-index: 1; 
+}
+
+
+
+
+
+
+.brush-size-input {
+    width: 40px;
+    height: 25px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+@media (max-width: 600px) {
+    .brush-size-input {
+        width: 35px;
+        height: 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+.tool-btn {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: -1px; 
+    touch-action: manipulation;
+}
+
+
+ .tool-btn:hover,
+.tool-btn.active-tool {
+    position: relative;
+    z-index: 1;
+}
+
+
+.tool-btn:hover {
+    background-color: #C1C1FF;
+}
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-section {
+        order: -1;
+      max-width:500px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    #gallery {
+        grid-template-columns: repeat(2, 1fr); /* how many columns */
+        padding: 0 10px;
+        column-gap: 10px;
+        row-gap:40px;
+    }
+
+
+        
+       .drawing-tools {
+        flex-wrap: wrap; 
+    }
+    
+    .tool-group {
+        gap: 0px;
+        flex-shrink: 1;
+    }
+    
+    .color-palette {
+        grid-template-columns: repeat(2, 20px);
+        grid-template-rows: repeat(2, 20px);
+        width: 40px;
+        height: 40px;
+    }
+    
+    .color-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .halftone-btn {
+        background-size: 6px 10px;
+    }
+    
+    .tool-group label {
+        font-size: 11px;
+    }
+    
+    input[type="range"] {
+        width: 60px; 
+     border: 1px solid black;
+            
+    }
+}
+
+
+#drawboxcanvas {
+    touch-action: none; 
+}
