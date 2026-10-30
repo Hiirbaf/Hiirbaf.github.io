@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!-- The css for the paginator are in the main css file for this project. -->
+    <link href = "pagination.css" rel = "stylesheet" type = "text/css">
+
+    <title>Snacks' Paint Box</title>
+    <meta charset="utf-8" />
+    <meta content="Snacks' Paint Box" property="og:title" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta content="Art by snacksgg" property="og:description" />
+    <meta content="https://snacksgg.me/" property="og:url" />
+    <meta content="./images/embedthumb.png" property="og:image" />
+    <meta content="#062c40" data-react-helmet="true" name="theme-color" />
+
+    <link href="main.css" rel="stylesheet" />
+    <link rel="icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+
+
+    <meta name = "viewport" content = "width=device-width">
+    <meta name = "description" content = "Learn how to implement pagination in pure JavaScript with this interactive example!">
+
+    <title>PoP Vlog - Pagination</title>
+
+    <!-- First we must link in the paginator.js script file so we can use it in
+    the body of our document. -->
+    <script src = "paginator.js" type = "text/javascript"></script>
+
+  </head>
+
+  <body>
+
+    <h1>PoP Vlog - Pagination</h1>
+
+    <!-- To import the paginator and its content, we use the Paginator.create method.
+    Note that after this method is called, the script tag it was called from will
+    be replaced with the paginator's html, meaning people looking through your page's
+    source in a browser won't see the script tag below unless they disable JavaScript;
+    they'll only see markup for the paginator. Pretty sweet, right? -->
+    <script type = "text/javascript">Paginator.create(["article1.txt", "article2.txt", "article3.txt", "article4.txt", "article5.txt"], 0, 1);</script>
+
+  </body>
+
+</html>

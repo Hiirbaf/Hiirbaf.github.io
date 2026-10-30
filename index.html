@@ -1,134 +1,819 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <title>Snacks' Paint Box</title>
+
+    <!--  Meta  -->
+
+    <meta charset="utf-8" />
+    <meta content="Snacks' Paint Box" property="og:title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,900|PT+Sans+Narrow|Yantramanav:400,900|Roboto:900,400|Bangers|Krona+One|Nunito:400,900|Frank+Ruhl+Libre:400,900|Oswald:400,900|Source+Serif+Pro|Work+Sans:400,900|Open+Sans|Raleway|Lato|Passion+One|Lateef|Crimson+Text|Baloo+Paaji+2|Jost|Oswald|Montserrat|Lexend+Deca|Bungee+Shade|Rubik|Inter:400,900|Bebas+Neue|Syncopate:400,700|VT323:400,900|Poppins:400,900|Fredoka+One:400,900|Staatliches:400,900|Redacted+Script:400,900|Rubik+Pixels:400,900|Cute+Font:400,900|Kosugi+Maru:400,900|Darumadrop+One:400,900|Kaisei+Decol:400,900|Playfair+Display:400,900|Rubik+Doodle+Shadow:400,900|Shadows+Into+Light:400,900|M+PLUS+1:400,900|Zeyada:400,900|Rock+Salt:400,900|Leckerli+One:400,900|Space+Mono:400,900|Finger+Paint:400,900|EB+Garamond:400,700" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/konva@8.3.2/konva.min.js"></script>
-    <link href="https://straw.page/min/?g=els&n=3139" rel="stylesheet"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://straw.page/apple-touch-icon.png?v=4">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://straw.page/favicon-32x32.png?v=4">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://straw.page/favicon-16x16.png?v=4">
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" data-cf-beacon="cwpqPhM52McDWNGARVApIzlwF8ahEFVZlr9rxKfadrU-7OKm4huZzQAFwH6XgzBHhSpm-Tf_wbkJWwVcHk9cSQFeGDI_SI_3T-IaYriVXO7aqMY4a8Vhx4lV5I8oBXOHahCiZgPgWD4zaNf23xZapN70TU_Qo3p5KK7ZPM0Ew9gHHrLCsfj2yYV5QBzSxVM1aVFkdNZT9i2ivjRLNyrJSHuOPqOqe25s8hw70zcsIA"></script>
-    <script defer src="https://notebook.straw.page" data-website-id="8c7c9f37-aee0-4f9e-ab2c-24ce322912d5"></script>
-    
-    <meta property="twitter:title" content="milliesilly's strawpage" />
-    <meta property="twitter:description" content="milliesilly's strawpage" />
-    <meta property="og:image" content="https://strawcdn.com/capture/pics/milliesilly.straw.page.jpg?v=4858" />
-    <meta name="twitter:title" content="milliesilly's strawpage">
-    <meta name="twitter:description" content="Made with StrawPage">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://strawcdn.com/capture/pics/milliesilly.straw.page.jpg?v=3883" />
-    <meta name="straw:user" content="milliesilly"/>
-    
-    <link rel="stylesheet" href="styles.css">
-    <title>milliesilly's strawpage</title>
+    <meta content="Art by snacksgg" property="og:description" />
+    <meta content="https://snacksgg.me/" property="og:url" />
+    <meta content="/images/embedthumb.png" property="og:image" />
+    <meta content="#062c40" data-react-helmet="true" name="theme-color" />
+    <meta name="description" content="Snacks' Paint Box, homepage for art and other projects by snacksgg">
+    <!--  Link/ Stylesheets  -->
+    <link href="./main.css" rel="stylesheet" />
+    <link rel="icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" fetchpriority="high">
+    <link type="text/css" rel="stylesheet" href="/css/lightgallery-bundle.css" />
+    <link rel="stylesheet" href="/js/lite-yt-embed/lite-yt-embed.css" />
+    <link rel="stylesheet" href="https://cdring.neocities.org/cdring/onionring.css"  >
+
+    <!--  Scripts  -->
+
+    <script src="https://kit.fontawesome.com/712948e023.js" crossorigin="anonymous"></script>
+
 </head>
-<body style="--g: 2.34375; --b: #ffedf4;">
-    <div class="first">
-        <div class="content">
-            <!-- Shape elements -->
-            <div class="element" style="--x: -0.013333333333333334; --y: 25.76; --w: 16.08; --h: 10.64; --r: 0; --s: 1; --bc: #ffffff;" data-uid="nclznovrcz" data-type="shape">
-                <div class="innerShape">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" preserveAspectRatio="none" style="--ns: 0;">
-                        <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
-                    </svg>
-                </div>
-            </div>
-            
-            <div class="element" style="--x: -0.02666666666666667; --y: 0.9733333333333334; --w: 16.08; --h: 8.546666666666667; --r: 0; --s: 1; --bc: #ffffff;" data-uid="nclznovrcz" data-type="shape">
-                <div class="innerShape">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1" viewBox="109.19999694824219,121.19999694824219,970.7999877929688,970.7999877929688" preserveAspectRatio="none" style="--ns: 0;">
-                        <path xmlns="http://www.w3.org/2000/svg" d="m109.2 121.2h970.8v970.8h-970.8z"></path>
-                    </svg>
-                </div>
-            </div>
-            
-            <!-- Images -->
-            <div class="element" data-image="contain" style="--x: -0.04; --y: -0.29333333333333333; --w: 16.093333333333334; --h: 1.9466666666666668; --r: 0; --s: 1;" data-uid="lizzvybpew" data-type="image">
-                <img src="https://files.strawcdn.com/straw/LsEUnQmcYifEvDMdCBNW.png" draggable="false" loading="lazy">
-            </div>
-            
-            <div class="element" data-image="contain" style="--x: 6.573333333333333; --y: 0.8533333333333334; --w: 8.946666666666667; --h: 9.173333333333334; --r: 0; --s: 1;" data-uid="lxoozgbwwi" data-type="image">
-                <img src="https://files.strawcdn.com/straw/RryxbnIczONMfQMwptOq.png" draggable="false" loading="lazy">
-            </div>
-            
-            <div class="element" data-image="contain" style="--x: -0.18666666666666668; --y: 0.3333333333333333; --w: 9.6; --h: 9.106666666666667; --r: 0; --s: 1;" data-uid="qghuonvljn" data-type="image">
-                <img src="https://files.strawcdn.com/straw/yCqadHNQgtSfWPZBxlVX.png" draggable="false" loading="lazy">
-            </div>
-            
-            <!-- Text elements -->
-            <div class="element" style="--ts: 1.5; --f: Darling Coffee; --co: #febece; --x: 9.826666666666666; --y: 4.08; --w: 2.546666666666667; --h: 1.1733333333333333; --r: 0; --s: 2.3;" data-uid="tzbxjqydvh" data-type="text">
-                <div class="el_content"><p>Millie!</p></div>
-            </div>
-            
-            <div class="element" style="--ts: 1.5; --f: Darling Coffee; --co: #febece; --x: 7.0960009765625; --y: 5.245333251953125; --w: 7.951111111111111; --h: 1; --r: 0; --s: 0.75;" data-uid="cvrlaxnitk" data-type="text">
-                <div class="el_content"><p>Welcome to my strawpage</p></div>
-            </div>
-            
-            <!-- More content continues... -->
-            <!-- (Incluir aquí todos los demás elementos del body) -->
-            
-            <!-- Canvas Gimmick -->
-            <div class="element" style="--x: 0.7133333333333334; --y: 44.613334554036456; --w: 14.813333333333333; --h: 14.639998677571615; --r: 0; --s: 1; --co: #fea5bb;" data-uid="zffwmaxcqe" data-type="gimmick-canvas">
-                <div class="innerCanvas">
-                    <div class="toolbox">
-                        <i class="fas fa-undo"></i>
-                        <div class="canvSizing">
-                            <input type="range" min="2" max="12" step="2" value="4">
-                        </div>
-                        <span class="canvCol"></span>
-                        <input type="color" id="colpick">
-                        <label for="colpick" style="visibility: hidden; position:absolute"></label>
-                    </div>
-                    <div class="picasso">
-                        <canvas></canvas>
-                        <div class="completionCasso">
-                            <button type="button">save your drawing!</button>
-                        </div>
-                    </div>
-                    <div class="sendPicasso">
-                        <button type="button">Send anonymously 🎨🤫</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- AMA Gimmick -->
-            <div class="element" style="--x: 0.72; --y: 60.026668294270834; --w: 14.8; --h: 1; --r: 0; --s: 1; --co: #fea5bb;" data-uid="percizgbve" data-type="gimmick-ama">
-                <div class="innerUhh">
-                    <div class="asker">
-                        <input type="text" placeholder="Ask me something!" maxlength="288">
-                        <div class="askExtra">
-                            <i class="fab fa-spotify"></i>
-                        </div>
-                    </div>
-                    <div class="askerSend">
-                        <button type="button">Send anonymously ✍️🤫</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Spotify Search Modal -->
-        <div class="spotSearch">
-            <i class="fas fa-times closer"></i>
-            <div class="innerSpotSearch">
-                <div class="searchWrap">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search for a song to recommend!">
-                </div>
-                <div class="spotResults"></div>
-            </div>
-        </div>
-        
-        <!-- Color Picker -->
-        <div class="colorPicker"></div>
+
+
+<!-- Header -->
+
+<nav style="z-index: 1030;">
+    <div class="container-header-gallery">
+        <a style="text-decoration:none" href="/" title="HOME"><button style="color: lightblue;box-shadow: 0 0 0 5px lightblue;">HOME</button></a>
+        <a style="text-decoration:none" href="/about" title="ABOUT"><button>ABOUT</button></a>
+        <a style="text-decoration:none" href="/gallery" title="GALLERY"><button>GALLERY</button></a>
+        <a style="text-decoration:none" href="/commissions" title="COMMISSIONS"><button>COMMISSIONS</button></a>
+        <a style="text-decoration:none" href="/misc" title="MISC"><button>MISC</button></a>
     </div>
+</nav>
+
+<!-- Floating Images -->
+
+<div class="img-float"><img src="images/wizzed2.gif" style="width: 35%; height: 35%;" alt=""></div>
+
+
+<!-- End of Header -->
+
+
+<main>
+
+    <body>
+
+        
+<!--    no JS stylings + Warning    -->
+<noscript>
+        <style>
+        #lastupdated {display:none;}
+                    #randomImage {display:none;}
+
+        </style>
+<div class="boxed4" style="font-size:12px;">This site uses JavaScript. Some things will not work with it disabled.</div><br><br></noscript>
+
+        <!--   `3 Columns  -->
+        <div class="content-with-sidebars">
+
+            <!-- === `MAIN COLUMN ===  -->
+            
+            <div class="main-column" style="margin-left: auto;margin-right: auto; padding-right: 15px;">
+
+                <!--    `Splash Art    --><div id="splashart">
+                                    <div><img src="/images/spb-text.png" class="swivel splashart-text" style="position: relative;width: 50%" alt="Snacks' Paint Box" ></div>
+                
+                    <img src="/images/spb-splash-placeholder.png" width="70%" style="border-radius: 15px; margin-bottom: 20px;" draggable="false" fetchpriority="high" alt="splash art" class="splashart-box">
+                </div>
+
+
+                <!-- `Mobile Only Links + Mobile Welcome Mobile -->
+
+                <div class="show-on-mobile">
+
+
+                    <!--     Mobile buttons       -->
+                    <div class="boxed4" style="background: url(/images/checker.png); background-size: 80%; width: 100%;" id="animatedBackground"><img src="/images/welcome2.png" class="boxheader" width="230px;"><br>
+                        <div class="tbox" style="padding: 3px; margin: 2px; padding-top: 12px;">
+                            <a href="#sitemap"><button style="margin: 2px; margin-bottom: 10px;" type="button">Sitemap</button></a>
+                            <a href="#news"><button style="margin: 2px; margin-bottom: 10px;">News</button></a>
+                            <a href="#blogposts"><button style="margin: 2px; margin-bottom: 10px;">Blogposts</button></a>
+                            <a href="#featuredart"><button style="margin: 2px;">Featured Art</button></a>
+                            <a href="#latestart"><button style="margin: 2px; ">Latest Art</button></a>
+                            <a href="#radiooo"><button style="margin: 2px;  ">Radio</button></a><br>
+                            <h1 style="font-size: 10px; margin-top: 0px; margin-bottom: 0px; line-height: 15px;">
+                                • <a href="#status">Status •
+                                    <a href="#lastfm">Last.fm </a> •
+                                    <a href="#chatbox">Chat </a> •
+                            
+                            <div style="font-size: 10px; padding: 3px; margin-top: 0px;"><a href="/updatelog">
+                                    <div id="lastmodbox2"></div>
+                                </a></div>
+
+
+                        </div>
+                        <img src="/images/artfight4.webp" class="rounded" style="width: 150px; height: 150px; margin-bottom: 22px;" fetchpriority="high"><br>
+                            
+<!--            welcome text box                -->
+                            
+<div class="tbox" style="height: 180px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 6px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px; margin-top: -10px; font-size: 13px; line-height: 20px;">
+                    Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
+                    <br>
+                    <hr class="small" style="width: 80%; margin-top: 5px; margin-bottom: 10px;">
+
+                    <em> Site created:<br> <i class="fa-solid fa-star" style="color: white;"></i> December&nbsp;6th,&nbsp;2023 <i class="fa-solid fa-star" style="color: white;"></i></em>
+                    <p style="font-size: 12px; line-height: 20px;">
+                        This place serves as a home for all my projects, as well as a place to share my interests, have fun, and experiment. It will always be a work in progress. <br><br>Check out the <a href="#sitemap">sitemap</a> section to navigate. Hope you enjoy exploring my site!
+                    <ul class="li-sitemap" style="margin-right: 2px; font-size: 1em;">
+
+
+                        <li><i class="fa-solid fa-square-check" style="color: #2ecc71;"></i> This site has:</li>
+                        <ul class="li-nested" style="font-size: 12px; line-height: 5px;">
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Swearing/mature topics </li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Image/script heavy pages</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Mobile friendly pages <span style="font-size: 8px;">(mostly)</span></li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Majority handmade assets</li>
+
+                        </ul><br>
+
+                        <li><i class="fa-solid fa-square-xmark" style="color: #e91e63;"></i> This site does NOT have:</li>
+                        <ul class="li-nested" style="font-size: 12px; line-height: 5px;">
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">AI</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">NSFW</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Flashing lights</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Autoplay</li>
+                        </ul>
+                    </ul>
+                    </p>
+                    
+</div>
+
+<!--          stamps              -->
+                        
+                        <div class="tbox" style=" margin-right: auto; margin-left: auto;padding-left: 0px; padding-right: 0px;padding-top: 15px;padding-bottom: 5px;justify-content: center;
+          align-content: center; width: 95%; margin-bottom: 0px;">
+                            <div style="padding: 0px;">
+                                <!-- all your stamps go after this, as regular 17images -->
+                                <marquee scrollamount="4">
+                             <img src="/images/stamps/hk.png" alt="hollow knight stamp" />
+                            <img src="/images/stamps/toonlinkfan.png" alt="toon link stamp" />
+                            <img src="/images/stamps/awk.jpg" alt="awk stamp"/>
+                            <img src="/images/stamps/copy_floppy.gif" style="margin-bottom: 8px;" alt="copy floppy stamp"/>
+                            <img src="/images/stamps/wahoo.png" alt="wahoo stamp" />
+                            <img src="/images/stamps/dontfeedai.gif" style="margin-bottom: 8px;" alt="anti ai stamp"/>
+                            <img src="/images/stamps/chao.png" alt="chao stamp"/>
+                            <img src="/images/stamps/bob.gif" style="margin-bottom: 8px;" alt="bob stamp"/>
+                            <img src="/images/stamps/daftpunk2.gif" alt="daft punk stamp"/>
+                            <img src="/images/stamps/record.gif" alt="record stamp"/>
+                            <img src="/images/stamps/cohost2.gif" style="margin-bottom: 8px;" alt="cohost stamp"/>
+                            <img src="/images/stamps/strfkr.png" alt="strfkr stamp"/>
+                            <img src="/images/stamps/y2k.png" style="margin-bottom: 8px;" alt="y2k stamp"/>
+                            <img src="/images/stamps/alwayswip.png" style="margin-bottom: 8px;" alt="always a wip stamp"/>
+                            <img src="/images/stamps/bear.png" alt="bear stamp"/>
+                            <img src="/images/stamps/inrainbows.gif" alt="radiohead stamp"/>
+                            <img src="/images/stamps/rain.gif" alt="rain stamp"/>
+                            <img src="/images/stamps/ublock-now.png" style="margin-bottom: 8px;" alt=" ublock stamp"/>
+                                </marquee>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                    <!-- End of Mobile Welcome -->
+
+
+
+                <!--    `Featured Art    -->
+                
+<!-- lightgallery plugins -->
+    <script src="js/lightgallery.umd.js"></script>
+    <script src="js/lg-thumbnail.umd.js"></script>
+    <script src="js/lg-zoom.umd.js"></script>
+    <script src="js/lg-video.umd.js"></script>
+
+                <div class="boxed4" id="animatedBackground2" style="width: 100%;background: url(/images/checker-diamond-stars.png); background-size: 15%; background-position: 0% 33%;  ">
+
+                    <!--     boxheader       -->
+                    <a href="/gallery">
+                        <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px; max-width: 100%;" src="/images/frontpage/boxheader-featured-art2.png" alt="featured art" draggable="false" id="featuredart"></a><br>
+
+
+                    <!--     featured big preview       -->
+                    <a href="/gallery">
+
+                        <img id="randomImage" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c; height: auto;" fetchpriority="high" alt="featured art" /> </a>
+<noscript> <a href="/gallery/artfeed"><img src="/images/frontpage/feat4.jpg" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;" loading="lazy" alt="latest art" /> </a></noscript>
+                    <br>
+
+                    <!--     `Feat Gallery       -->
+                    <div id="lightgallery" class="lightgallery">
+                        <a href="/images/gallery/punkschool.gif"> <img alt="2022" src="/images/gallery/thumbs/yt1.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/58.png"> <img alt="2024" src="/images/gallery/thumbs/58.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/2.png"> <img alt="Gift Art - 2022" src="/images/gallery/thumbs/2.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/27.png"> <img alt="2021" src="/images/gallery/thumbs/27.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/6.png"> <img alt="2022" src="/images/gallery/thumbs/6.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/9.png"> <img alt="2022" src="/images/gallery/thumbs/9.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/7.png"> <img alt="ArtFight 2022" src="/images/gallery/thumbs/7.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/11.png"> <img alt="2022" src="/images/gallery/thumbs/11.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/af4/cruz.png"> <img alt="2025" src="/images/gallery/af4/cruzthumb2.jpg" alt="gallery thumbnail" class="rounded2" /></a>
+                        <a href="/images/gallery/4.png"> <img alt="2022" src="/images/gallery/thumbs/4.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/31.png"> <img alt="2022" src="/images/gallery/thumbs/31.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                        <a href="/images/gallery/10.png"> <img alt="2021" src="/images/gallery/thumbs/10.jpg" class="rounded2" alt="gallery thumbnail" /></a>
+                    </div>
+                </div>
+
+
+
+
+
+                <!--    `Latest Art    -->
+                <div class="boxed4" style="width: 100%;background: url(/images/checker-diamond.png); background-size: 15%;" id="animatedBackground2">
+
+
+                    <!--     boxheader       -->
+
+                    <a href="/gallery/artfeed.html">
+                        <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;max-width: 100%;" src="/images/frontpage/boxheader-latest-art2.png" alt="latest art" draggable="false" id="latestart"></a><br>
+
+                    <!--     latest big preview       -->
+                    <a href="/gallery/artfeed"><img src="/latest.jpg" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;" loading="lazy" alt="latest art" /> </a>
+
+                    <div id="lightgallery2">
+
+                        <!--           `Latest Art - insert images here             -->
+
+<a href="/images/gallery/af5/harzuka.gif"> <img alt="2026" src="/images/gallery/af5/harzukathumb2.gif" width="220px" style="border-radius: 15px; width: 150px;  outline: none; " class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/af5/pang.png"> <img alt="2026" src="/images/gallery/af5/pangthumb2.png" width="220px" style="border-radius: 15px; width: 150px; overflow: hidden; " class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/af5/blip.gif"> <img alt="2026" src="/images/gallery/af5/blipthumb2.png" width="220px" style="border-radius: 15px; width: 150px; overflow: hidden; " class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/af5/prism.png"> <img alt="2026" src="/images/gallery/af5/prismthumb2.png" width="220px" style="border-radius: 15px; width: 150px; overflow: hidden; " class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/74.png"> <img alt="2025" src="/images/gallery/thumbs/74.png" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" /></a>
+<a href="https://www.youtube.com/watch?v=p5roaHAPuuc"> <img alt="2025" src="/images/gallery/thumbs/anim1.png" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" /></a>
+<a href="/images/gallery/af4/phoebe.png"> <img alt="2025" src="/images/gallery/af4/phoebethumb2.png" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/af4/cruz.png"> <img alt="2025" src="/images/gallery/af4/cruzthumb2.png" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/af4/enki.gif"> <img alt="2025" src="/images/gallery/af4/enkithumb.gif" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/72.png"> <img alt="2025" src="/images/gallery/thumbs/72.png" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/71.png"> <img alt="2025" src="/images/gallery/thumbs/71.png" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" alt="gallery thumbnail" /></a>
+<a href="/images/gallery/70.png"> <img alt="2025" src="/images/gallery/thumbs/70.png" width="220px" style="border-radius: 15px; width: 150px;" class="rounded2" alt="gallery thumbnail" /></a>
+                        
+                    </div>
+
+<br> 
+
+                    <a href="/gallery/artfeed"><i class="fa-solid fa-images" style="color: lightblue;"></i>&nbsp;Art Feed</a>
+                    
+                </div>
+
+                <br>
+                
+<div >
+<a href="/misc/messageboard"><img class="index-buttons" src="/images/envelope.png" width="150" onmouseover=this.src='/images/envelope.webp' onmouseout=this.src='/images/envelope.png' alt="leave a message!"></a>
+<a href="/misc/drawbox"><img class="index-buttons" src="/images/etchasketch.png" width="150" onmouseover=this.src='/images/etchasketch.webp' onmouseout=this.src='/images/etchasketch.png' alt="leave a drawing!"></a>
+
+                </div>
+                
+                <!-- web buttons -->
+                <div style="margin-bottom:5px;" class="webbuttons tooltip">
+                    
+                    <details><summary style="list-style: none;"><img src="/images/spb-current.gif" alt="Snacks' Paint Box" class="image-hover-highlight" style="cursor: pointer;" title="click to copy my button!" />                    <a href="https://neocities.org/site/snacksgg"><img src="/images/buttons/neocitiesbutton.png" alt="Snacks' Paint Box" class="image-hover-highlight" /></a> <br>
+</summary>
+                    
+                    
+                        <textarea style="position:absolute;
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto; width:320px; height: 40px; font-size:10px;background-color:#00243B;color:white;"><a href="https://snacksgg.me/" target="_blank"><img src="https://snacksgg.me/images/spb-current.gif/"></a></textarea> </details>
+
+                </div> <br><br>
+
+
+
+
+
+
+            </div>
+
+            <!--  End of Main Column  -->
+
+            <!--  === LEFT COLUMN ===  -->
+
+            <div class="left-column">
+
+
+                <!--  `Sitemap  -->
+                <br>
+                <div class="boxed4" style="margin-bottom: 30px;padding-right: 0px; line-height: 22px;background-color: #00121d;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #00121d 28px ), repeating-linear-gradient( #00375955, #003759 ); margin-top: 0px;">
+
+                    <!--         boxheader           -->
+
+                    <img class="boxheader noselect" style="margin-top: -50px;  margin-bottom: -5px; width: 100%;" src="/images/frontpage/boxheader-sitemap.webp" alt="sitemap" draggable="false" id="sitemap"> <br>
+
+                    <div class="tbox" style="text-align: left;height: 580px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 2px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px; margin-top: -20px;">
+
+
+                        <ul class="li-sitemap" style="margin-right: 2px; font-size: 1em;">
+
+                            <!--      Info      -->
+
+                            <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> Info</li>
+                            <ul class="li-nested">
+                                <li><a href="/about"><i class="fa-solid fa-user" style="color: lightblue;"></i>&nbsp;About</a></li>
+                                <li><a href="/blog/index"><i class="fa-solid fa-pen-to-square" style="color: lightblue;"></i>&nbsp;Blog</a></li>
+                                <li><a href="/commissions"><i class="fa-solid fa-dollar-sign" style="color: lightblue;"></i>&nbsp;Commissions</a></li>
+                                <li><a href="/updatelog"><i class="fa-solid fa-check-double" style="color: lightblue;"></i>&nbsp;Update&nbsp;Log & Todo</a></li>
+                            </ul>
+
+                            <!--     Gallery       -->
+                            <li><i class="fa-solid fa-image" style="color: #ffffff;"></i>&nbsp;Gallery</li>
+                            <ul class="li-nested">
+                                <li><a href="/gallery"><i class="fa-solid fa-images" style="color: lightblue;"></i>&nbsp;Featured&nbsp;Art</a></li>
+                                <li><a href="/gallery/ocart"><i class="fa-solid fa-paintbrush" style="color: lightblue;"></i>&nbsp;Original&nbsp;Art</a></li>
+                                <li><a href="/gallery/fanart"><i class="fa-solid fa-pen" style="color: lightblue;"></i>&nbsp;Fanart</a></li>
+                                <li><a href="/gallery/animations"><i class="fa-solid fa-film" style="color: lightblue;"></i>&nbsp;Animations</a></li>
+                                <li><a href="/gallery/3D"><i class="fa-solid fa-cube" style="color: lightblue;"></i>&nbsp;3D&nbsp;Art</a></li>
+                                <li><a href="/gallery/forothers"><i class="fa-solid fa-user-pen" style="color: lightblue;"></i>&nbsp;For&nbsp;Others</a> </li>
+                                <li><a href="/gallery/sketchbook"><i class="fa-solid fa-book-open" style="color: lightblue;"></i>&nbsp;Sketchbook</a> </li>
+                            </ul>
+
+                            <!--      Projects      -->
+                            <li><i class="fa-solid fa-image" style="color: #ffffff;"></i>&nbsp;Projects</li>
+                            <ul class="li-nested">
+                                <li><a href="/misc/wip.html"><i class="fa-solid fa-walking" style="color: lightblue;"></i>&nbsp;OC&nbsp;Pages</a></li>
+                            </ul>
+
+                            <!--     Links       -->
+                            <li><i class="fa-solid fa-link" style="color: #ffffff;"></i> Links</li>
+                            <ul class="li-nested">
+                                <li><a href="/misc/coolstuff"><i class="fa-solid fa-star" style="color: lightblue;"></i> Cool&nbsp;Stuff!</a> </li>
+                                <li><a href="/misc/resources"><i class="fa-solid fa-rectangle-list" style="color: lightblue;"></i> Resources</a></li>
+
+                            </ul>
+
+                            <!--      Boards      -->
+                            <li><i class="fa-solid fa-chess-board" style="color: #ffffff;"></i> Boards</li>
+                            <ul class="li-nested">
+
+                                <li><a href="/misc/drawbox"><i class="fa-solid fa-pencil" style="color: lightblue;"></i> Drawing&nbsp;Board</a> </li>
+                                <li><a href="/misc/messageboard"><i class="fa-solid fa-comments" style="color: lightblue;"></i> Message&nbsp;Board </a></li>
+                            </ul>
+
+                            <!--     Fun       -->
+                            <li><i class="fa-solid fa-face-laugh" style="color: #ffffff;"></i> Fun</li>
+                            <ul class="li-nested">
+
+                                <li><a href="/misc/randomvgm"><i class="fa-solid fa-wave-square" style="color: lightblue;"></i> Random&nbsp;VGM</a> </li>
+                                <li><a href="/misc/randomsong"><i class="fa-solid fa-music" style="color: lightblue;"></i> Random&nbsp;Song</a> </li>
+                                <li><a href="/misc/randomvideo"><i class="fa-solid fa-video" style="color: lightblue;"></i> Random&nbsp;Video</a> </li>
+                                <li><a href="/misc/petpics"><i class="fa-solid fa-paw" style="color: lightblue;"></i> Pet&nbsp;Pics</a> </li>
+                                <li><a href="/misc/stamps"><i class="fa-solid fa-stamp" style="color: lightblue;"></i> Stamps</a> </li>
+                            </ul>
+
+
+                            <!--     Other       -->
+                            <li><i class="fa-solid fa-fish" style="color: #ffffff;"></i> Other</li>
+                            <ul class="li-nested">
+                                <li><i class="fa-solid fa-box-archive" style="color: lightblue;"></i> <a href="/misc/oldart">Old Art Archive</a></li>
+
+                            </ul>
+
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <!--  `News  -->
+                <br><br>
+                <div class="boxed4" style="margin-bottom: 30px;padding-right: 0px; line-height: 22px;margin-top: 0px;">
+                    
+                    <!--        boxheader            -->
+                    <a href="/updatelog"><img class="boxheader image-hover-highlight" style="margin-top: -50px; width: 100%;" src="/images/frontpage/boxheader-news.webp" alt="news" draggable="false" id="news"> </a> <br>
+
+                    <div class="tbox" style="text-align: left;height: 350px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 2px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px; margin-top: -10px;">
+
+                        <!--        insert news here            -->
+<!-- template -  
+<details style="cursor: pointer;"><summary><em>MONTH&nbsp;2026</em> — NEWS GOES HERE
+<div class="tbox" style="padding: 2px; padding-bottom: 2px;">
+<p style="font-size: 12px;line-height: 20px;"> MORE DETAILS GO HERE</p>  </div>     
+-->
+                        
+                        <details style="cursor: pointer;"><summary><em>July&nbsp;2026</em> — <a href="/gallery/forothers#artfight">ArtFight Drawings</a> + General Update </summary>
+                            <div class="tbox" style="padding: 2px; padding-bottom: 2px;">
+                            <p style="font-size: 12px;line-height: 20px;"> where did the time go.. been goin through it but feeling a bit more energized, hope to make more updates and stuff in general soon 🙏</p>
+                            </div>
+                        </details>
+
+
+                        
+
+                        <!-- Past News -->
+                        <hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 10px;">
+                        <font color="#ddd" size=2 style="line-height: 20px;">
+                            
+                            <div class="tbox">
+                                <em>July&nbsp;2025</em> — I worked on a game jam game, <a href="https://snacksgg.itch.io/dreamsick" target="_blank">play it here!</a>
+                            </div>
+                            <div class="tbox" style="background:rgba(0, 0, 0, 0);">
+                            <details style="cursor: pointer;">
+                                    <summary><em>April&nbsp;2025</em> — Added <a href="/misc/drawbox">Drawing Board</a> and <a href="/misc/petpics">Pet Pics</a> pages! </summary>
+                                    <div class="tbox" style="padding: 2px; padding-bottom: 2px;">
+                                        <p style="font-size: 12px;line-height: 20px;">Planning: About Me and Misc page rework + more blogposts</p>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="tbox">
+                                <em>February&nbsp;2025</em> — New <a href="/blog/index">blog</a> and homepage layouts!
+                            </div>
+                            <div class="tbox" style="background:rgba(0, 0, 0, 0);">
+                                <em>September&nbsp;2024</em> — ArtFight 2024 drawings added to <a href="/gallery/forothers#artfight">For&nbsp;Others</a>
+                            </div>
+                            <div class="tbox">
+                                <em>December&nbsp;6th&nbsp;2023</em> — <br>
+                                Site created
+                            </div>
+
+                        </font>
+                    </div>
+
+
+                </div>
+
+                <!--  `Recent `Blogposts  -->
+
+                <div class="boxed4" style="padding-bottom: 5px; margin-bottom:15px;"> <a href="/blog/index">
+
+                        <div class="noselect">
+                            <img class="boxheader image-hover-highlight" style="margin-top: -50px; width: 100%;" src="/images/frontpage/boxheader-blogposts.webp" alt="blogposts" draggable="false" id="blogposts">
+                    </a></div>
+                <div class="tbox" style="text-align: left;height: 300px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 2px; box-shadow: 0px 0px 5px #000e1c; width: 100%">
+
+                    <!--       Insert BlogPosts  -->   
+<!-- template: 
+<em>XX-XX-XX</em> • <br><a href="/blog/posts/">BLOG TITLE</a>
+<hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 5px;">  
+-->
+
+
+                    <em>12-28-25</em> • <br><a href="/blog/posts/2025-12-28-new-year-2026">New Year 2026</a>
+                    <hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 5px;">
+                    <em>8-20-25</em> • <br><a href="/blog/posts/2025-08-20-working-on-a-game">Working On A Game</a>
+                    <hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 5px;">
+                    <em>7-30-25</em> • <br><a href="/blog/posts/2025-07-30-music-spotlight-0">Music Spotlight #0 - Longtime Favorites</a>
+                    <hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 5px;">
+                    <em>5-14-25 • [miniblog]</em> <br><a href="/blog/posts/2025-05-14-instrumental-music"> Instrumental Music</a>
+                    <hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 5px;">
+                    <em>2-17-25</em> • <br><a href="/blog/posts/2025-02-17-easing-back-into-art">Art Games</a>
+                    <hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 5px;">
+                    <em>1-1-24</em> • <br><a href="/blog/posts/2024-01-02-happy-new-year">Happy New Year!</a>
+
+                </div>
+                    <a href="/blog/archive" style="margin-top: 2px;"><i class="fa-solid fa-pen-to-square" style="color: lightblue;"></i>&nbsp;All Posts</a>
+            </div>
+
+            <div id="radiooo"></div>
+            <!--  Music Players (Radio)  -->
+            <img class="boxheader" id="randomImage2" style=";padding: 0px; margin-bottom: -36px; margin-top: -20px; padding-right:20px;" alt="">
+
+            <div class="boxed4" style="background-color: #00121d;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #00121d 28px ), repeating-linear-gradient( #00375955, #003759 );">
+
+                <center>• Radio •
+
+
+                                                             <lite-youtube playlistid="PLmLtU7F7y0CH23FNNqZWs0cAbDw-BCrn-" params="listType=playlist&list=PLmLtU7F7y0CH23FNNqZWs0cAbDw-BCrn-" style="border-radius: 15px;height: 215px;box-shadow: 0px 0px 15px #000e1c; margin-bottom: 10px;" loading="lazy">                        <noscript><br>JavaScript is required.</noscript>
+</lite-youtube>
+                    • VGM & Chiptune •
+                                         <lite-youtube playlistid="PLmLtU7F7y0CEpGK2fueNxS7UfeXWC7wFV" params="listType=playlist&list=PLmLtU7F7y0CEpGK2fueNxS7UfeXWC7wFV" style="border-radius: 15px;height: 215px;box-shadow: 0px 0px 15px #000e1c; margin-bottom: 10px;" loading="lazy"><noscript><br>JavaScript is required.</noscript></lite-youtube>
+                    
+                    <a href="javascript:void(0);" onclick="window.open('/radio.html','mywin','width=450,height=550');"><i class="fa-solid fa-up-right-from-square" style="color: lightblue;"></i> Popout</a>
+                    <br>
+
+
+                </center>
+
+            </div>
+
+
+        </div>
+
+
+
+<!-- End of Left Column -->
+
+        <!--  === RIGHT COLUMN ===  -->
+        <div class="right-column" style="margin-left: auto;margin-right: auto;z-index: 1;">
+
+
+            <!--   Last Updated -->
+
+
+            <div class="boxed4  hide-on-mobile" style="cursor:default; background:url(/images/triangle3-seamless3-mini.jpg); background-size:109%;overflow: hidden;font-size: 14px; background-attachment: fixed;" id="lastupdated">Last updated: <a href="/updatelog">
+                    <div id="lastmodbox" style="display: inline-flex; ">
+                    </div>
+                </a></div>
+
+
+
+
+            <!--       Welcome Blurb         -->
+
+            <div class="boxed4 hide-on-mobile" id="animatedBackground" style="background: url(/images/checker.png); background-size: 100%;">
+                <img src="/images/welcome2.png" class="boxheader" width="230px;" alt="Welcome!"><br> 
+                <img src="/images/artfight4.webp" class="rounded" style="width: 200px; height: 200px; margin-bottom: 22px;" fetchpriority=high alt="" ><br>
+                
+                <div class="tbox" style="height: 180px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 6px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px; margin-top: -5px; font-size: 13px; line-height: 20px; width: 100%;">
+                    Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
+                    <br>
+                    <hr class="small" style="width: 80%; margin-top: 5px; margin-bottom: 10px;">
+
+                    <em> Site created:<br> <i class="fa-solid fa-star" style="color: white;"></i> December&nbsp;6th,&nbsp;2023 <i class="fa-solid fa-star" style="color: white;"></i></em>
+                    <p style="font-size: 12px; line-height: 20px;">
+                        This place serves as a home for all my projects, as well as a place to share my interests, have fun, and experiment. It will always be a work in progress. <br><br>Check out the <a href="#sitemap">sitemap</a> section to navigate. Hope you enjoy exploring my site!<br>
+
+                    <ul class="li-sitemap" style="margin-right: 2px; font-size: 1em;">
+
+
+                        <li><i class="fa-solid fa-square-check" style="color: #2ecc71;"></i> This site has:</li>
+                        <ul class="li-nested" style="font-size: 12px; line-height: 5px;">
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Swearing/mature&nbsp;topics </li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Image/script heavy pages</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Mobile friendly pages <span style="font-size: 8px;">(mostly)</span></li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Majority handmade assets</li>
+
+                        </ul><br>
+
+                        <li><i class="fa-solid fa-square-xmark" style="color: #e91e63;"></i> This site does NOT have:</li>
+                        <ul class="li-nested" style="font-size: 12px; line-height: 5px;">
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">AI</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">NSFW</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Flashing lights</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Autoplay</li>
+                        </ul>
+                    </ul>
+                    
+                    </p>
+                    
+</div>
+
+                <!--     stamp marquee       -->
+
+                <div class="tbox" style=" margin-right: auto; margin-left: auto;padding-left: 0px; padding-right: 0px;padding-top: 5px;padding-bottom: 5px;justify-content: center;
+          align-content: center; width: 95%; margin-bottom: 0px; height: 90px;">
+                    <div id="marquee">
+                        <div id="stamps" style="padding: 0px;">
+                            <!-- all your stamps go after this, as regular 17images -->
+                            <img src="/images/stamps/hk.png" alt="hollow knight stamp" />
+                            <img src="/images/stamps/toonlinkfan.png" alt="toon link stamp" />
+                            <img src="/images/stamps/awk.jpg" alt="awk stamp"/>
+                            <img src="/images/stamps/copy_floppy.gif" style="margin-bottom: 8px;" alt="copy floppy stamp"/>
+                            <img src="/images/stamps/wahoo.png" alt="wahoo stamp" />
+                            <img src="/images/stamps/dontfeedai.gif" style="margin-bottom: 8px;" alt="anti ai stamp"/>
+                            <img src="/images/stamps/chao.png" alt="chao stamp"/>
+                            <img src="/images/stamps/bob.gif" style="margin-bottom: 8px;" alt="bob stamp"/>
+                            <img src="/images/stamps/daftpunk2.gif" alt="daft punk stamp"/>
+                            <img src="/images/stamps/record.gif" alt="record stamp"/>
+                            <img src="/images/stamps/cohost2.gif" style="margin-bottom: 8px;" alt="cohost stamp"/>
+                            <img src="/images/stamps/strfkr.png" alt="strfkr stamp"/>
+                            <img src="/images/stamps/y2k.png" style="margin-bottom: 8px;" alt="y2k stamp"/>
+                            <img src="/images/stamps/alwayswip.png" style="margin-bottom: 8px;" alt="always a wip stamp"/>
+                            <img src="/images/stamps/bear.png" alt="bear stamp"/>
+                            <img src="/images/stamps/inrainbows.gif" alt="radiohead stamp"/>
+                            <img src="/images/stamps/rain.gif" alt="rain stamp"/>
+                            <img src="/images/stamps/ublock-now.png" style="margin-bottom: 8px;" alt=" ublock stamp"/>
+                        </div>
+
+
+                        <!-- Shuffle Stamp Script -->
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--       Status.cafe Status         -->
+
+            <div class="boxed4" id="animatedBackground" style="background: url(/images/checker.png); background-size: 50%;animation: animatedBackground 1000s linear infinite; min-height: 160px; "> <a href="https://status.cafe/users/snacksgg" target="_blank">
+
+                    <img class="boxheader image-hover-highlight" style="margin-bottom: -0px; margin-top: -50px;" src="/images/frontpage/boxheader-status.webp" alt="status" draggable="false" id="status"> </a>
+
+                <div style="background:rgba(0,0,0,.5); border-radius: 15px; font-size: 14px;">
+                    <div id="statuscafe" style="margin-top: 0px; line-height: 23px;">
+                        
+                        <div id="statuscafe-username"></div>
+                        <noscript>JavaScript is required.</noscript>
+                        <div id="statuscafe-content"></div>
+<!--              <div class="tbox">  Currently... <br> <span style="font-size: 12px; text-align: left;">
+                                               <i class="fa-solid fa-gamepad" style="color: rgb(255, 255, 255);"></i><i>playing</i><br><br> </span>
+                    </div>-->
+                    </div>
+                    
+                    <script src="https://status.cafe/current-status.js?name=snacksgg" defer></script>
+
+                </div>
+            </div>
+
+
+            <!--       lastfm img version    -->
+
+
+            <div class="boxed4" style="background: url(/images/checkersmall3.jpg); background-size: 10%;animation: animatedBackground 1000s linear infinite; padding-top: 0px;padding-bottom: 0px;background-color: 3b0b00; ">
+
+                <!--     boxheader       -->
+
+                <a href="https://last.fm/user/snacksgg" target="_blank"><img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;" src="/images/frontpage/boxheader-lastfm.webp" alt="last.fm" draggable="false" id="lastfm"></a><br>
+
+
+                <!--     last.fm img       -->
+
+                <a href="https://last.fm/user/snacksgg" target="_blank"><img src="https://lastfm-recently-played.jeffreyca.workers.dev/svg?user=snacksgg&amp;theme=legacy&amp;radius=15&amp;logo=0&amp;footer=stats&amp;bg_color=3b0b00&amp;border=none" alt="last.fm recently played" style="margin-left:auto; margin-right:auto; padding-top: 10px;padding-bottom:10px; min-height: 180px;" onerror="this.src='/images/404-lastfm.png';"></a>
+            </div>
+
+                        <!--      fake desktop          -->
+
+            <div class="boxed4" style="background-image: url(/images/downloadin.png); background-size: cover;">
+                <a href="https://record.club/snacksgg/releases" target="_blank"><img src="/images/buttons/desktop1.png" class="image-hover-highlight" style="width: 30%;"alt="album catalog"></a>
+                <a href="https://www.backloggd.com/u/snacksgg/games/" target="_blank"><img src="/images/buttons/desktop2.png" class="image-hover-highlight" style="width: 30%;"alt="game catalog"></a>
+
+
+                <!--         album of the moment   aotm        -->
+                <a href="/misc/aotm"><img src="/images/buttons/desktop3.png" class="image-hover-highlight" style="width: 30%;" alt="album of the moment"></a>
+            </div>
+            
+            <!-- Chatbox -->
+            <div class="boxed4" style="background: url(/images/checker.png); background-size: 70%;animation: animatedBackground 1000s linear infinite; ">
+                <a href="https://www3.cbox.ws/box/?boxid=3543718&boxtag=iLeb5s" target="_blank"><img class="boxheader image-hover-highlight" style="margin-bottom: 0px; margin-top: -55px;" src="/images/frontpage/boxheader-chat.webp" alt="chatbox" draggable="false" id="chatbox"> </a>
+
+                <iframe src="https://www3.cbox.ws/box/?boxid=3543718&boxtag=iLeb5s" width="100%" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" style="border-radius: 15px;margin-top: 0px;" title="Chatbox"></iframe>
+            </div>
+
+
+
+
+            <!-- Webrings -->
+            <!--   boxheader     -->
+            <img class="boxheader " style="margin-bottom: -30px; margin-top: -20px;" src="/images/frontpage/boxheader-webrings.webp" alt="webrings" draggable="false" id="webrings">
+
+            <!--    webrings iframe    -->
+            <iframe src="https://snacksgg.neocities.org/webrings" style="background-image: url(/images/patterns/tilesw10.png);border:0;border-radius: 15px;outline: 5px solid #000e1c; overflow:scroll; margin-right: 15px; padding-left: 8px; outline: 5px solid #000e1c; text-align: center; text-decoration: none; display: inline-block; font-weight: bolder; text-decoration-line: none pointer-events: none; font-size: 16px; width: 90%; height: 300px;" loading="lazy" title="Webrings" ></iframe>
+
+            <!--       Puma         -->
+
+            <div>
+                <div style="height: 100%; width: 100%; resize: both; auto;cursor: url(/images/puma2.png), auto;">
+                    <img src="/images/pumapost1.png" alt="dogy" id="puma" onclick="diffImage(this);" </div>
+                </div>
+
+            </div>
+            
+            
+ 
+
+        </div>
+            
+            
+<!--    mobile - footer header links       -->
+            <div class="boxed4  show-on-mobile animatedBackground" style="background: url(/images/checker.png); background-size: 80%; width: 100%; padding: 10px;" id="animatedBackground">
+            
+            <div class="tbox" style="margin: 0;">
+                            <a href="#"><button style="margin: 2px; margin-bottom: 5px;color: lightblue;" type="button">HOME</button></a>
+                            <a href="/about"><button style="margin: 2px; margin-bottom: 5px;">ABOUT</button></a>
+                            <a href="/gallery"><button style="margin: 2px; margin-bottom: 5px;">GALLERY</button></a> 
+                            <a href="/commissions"><button style="margin: 2px;margin-bottom: 5px;">COMMISSIONS</button></a>
+                            <a href="/misc"><button style="margin: 2px;margin-bottom: 5px; ">MISC</button></a>
+</div>
+</div>    
+            
+            
+        </div>
+
+
+
+
+
+
+        <!-- Scroll Buttons -->
+        <div id="scrollBottom"></div>
+        <a class="scroll-top" href="#"><img src="/images/totop.png" style="width: 60%;" alt="scroll to top"></a>
+        <a class="scroll-bot" href="#scrollBottom"><img src="/images/tobot.png" style="width: 60%;" alt="scroll to bottom"></a>
+
+
+
+
+
+
+        <!-- === Combined Scripts === -->
+
+        <script defer>
+            // gallery script
+
+            lightGallery(document.getElementById('lightgallery', 'lightgallery2'), {
+                plugins: [lgZoom, lgThumbnail, lgVideo],
+                licenseKey: 'your_license_key',
+                speed: 500,
+                // ... other settings
+
+            });
+
+            lightGallery(document.getElementById('lightgallery2'), {
+                plugins: [lgZoom, lgThumbnail, lgVideo],
+                licenseKey: 'your_license_key',
+                speed: 500,
+                // ... other settings
+
+            });
+
+            // mobile last updated script
+            var modified = document.lastModified
+            const lastmodbox2 = document.getElementById("lastmodbox2")
+
+            lastmodbox2.innerHTML = `<font color="white">Last Updated: </font>${modified}`
+
+            // last updated script
+
+            var modified = document.lastModified
+            const lastmodbox = document.getElementById("lastmodbox")
+
+            lastmodbox.innerHTML = `${modified}`
+
+            // random image script
+
+            // featured gallery rand
+            document.getElementById("randomImage").src = "/images/frontpage/feat" + Math.floor(Math.random() * 9) + ".jpg";
+            // radio rand
+            document.getElementById("randomImage2").src = "/images/frontpage/radio" + Math.floor(Math.random() * 3) + ".webp";
+
+            // puma onclick script
+            function diffImage(img) {
+                if (img.src.match("/images/pumapost1.png")) img.src = "/images/pumapost2.png";
+                else img.src = "/images/pumapost1.png";
+            }
+
+            // shuffle stamps script
+            function stampshuffle() {
+                const marquee = document.querySelector('#stamps');
+                const stamps = Array.from(marquee.querySelectorAll('img'));
+
+                for (let i = stamps.length - 1; i > 0; i--) {
+                    const randomIndex = Math.floor(Math.random() * (i + 1));
+                    [stamps[i], stamps[randomIndex]] = [stamps[randomIndex], stamps[i]];
+                }
+
+                stamps.forEach(img => marquee.appendChild(img));
+            }
+
+            stampshuffle();
+                 
+   // for custom neocities thumbnail, >  
+            
+ if (navigator.userAgent === "Screenjesus") {document.body.innerHTML = '<img src="/images/frontpage/thumb.png" style="width:100vw;height:100vh;object-fit:cover;">'; } 
+            
+            
+
+        </script>
+
+
+    <script src="/js/lite-yt-embed/lite-yt-embed.js" defer></script>
     
-    <script src="https://straw.page/c1d8cde9-d2dd-4d90-8f43-509b7a9ac5d9.js"></script>
-    <script src="script.js"></script>
-</body>
+<!--  End of Combined Scripts  -->
+    
+        <!--  End of Body & Main  -->
+    </body>
+</main>
+
+
+
+<!-- Footer -->
+          
+<footer style="overflow: hidden;">
+    
+    
+
+    <div class="left footertexts" style="position: float; padding-top:65px;cursor: default; display: block;">© snacksgg <script>
+            document.write(new Date().getFullYear());
+        </script> • All rights reserved. <br> Do not repost or copy content without permission. </div>
+
+    <div class="footercontent" style="padding-top:55px; min-width: 100%;cursor: default; padding-right: 100px;">
+        <a href="https://snacksgg.tumblr.com/" target="_blank"><img src="/images/tumblr.png" alt="Tumblr" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://bsky.app/profile/snacksgg.me" target="_blank"><img src="/images/sm-bsky.png" alt="Bluesky" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://sheezy.art/snacks" target="_blank"><img src="/images/sm-sheezy.png" alt="Sheezyart" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://www.twitch.tv/snacksgg" target="_blank"><img src="/images/sm-twitch.png" alt="Twitch" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://snacksgg.newgrounds.com/" target="_blank"><img src="/images/sm-ng.png" alt="Newgrounds" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://www.youtube.com/@snacksgg/" target="_blank"><img src="/images/sm-yt.png" alt="YouTube" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://artfight.net/~snacksgg" target="_blank"><img src="/images/sm-artfight.png" alt="ArtFight" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://ko-fi.com/snacksgg" target="_blank"><img src="/images/sm-kofi.png" alt="Ko-fi" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://discord.gg/QAhaWEFm8x" target="_blank" style="margin-right: 50px;"><img src="/images/sm-discord.png" alt="Discord" style="width:50px;height:50px;" class="sm"></a>
+
+        <span class="hide-on-mobile">
+        • <a href="/">Home</a> •
+        <a href="/about">About</a> •
+        <a href="/gallery.html">Gallery</a> •
+        <a href="/commissions.html">Commissions</a> •
+        <a href="/misc.html">Misc</a> • </span>
+    </div>
+</footer>
+
+<!-- End of Footer -->
+
 </html>
