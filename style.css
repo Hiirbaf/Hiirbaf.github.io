@@ -2275,6 +2275,57 @@ MARQUEE
 	border: 0;
 }
 
+.ass {
+    margin: 1%;
+    padding: 20px;
+
+    border: 3px solid #391669;
+    border-radius: 5px;
+
+    background:#1a0b333b;
+    backdrop-filter: blur(1px);
+
+    transition: all 0.35s ease-in-out;
+}
+.ass:hover {
+    background:#1a0b3379;
+    backdrop-filter: blur(5px);
+}
+
+.bigtext {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.songrando {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+
+    margin: 0 auto;
+    max-width: 30%;
+}
+.songrando button {
+    font-family: 'Source Code Pro', Courier, monospace;
+    color:#d3d1ff;
+
+    padding: 10px 30px 10px 30px;
+    margin: 0 auto;
+
+    border: 3px solid #391669;
+    border-radius: 5px;
+
+    background:#1a0b3379;
+}
+.songrando button:hover {
+    color:#ffffff;
+    text-shadow: 0 0 5px #00ddff;
+    background:#391669;
+    cursor: pointer;
+}
 
 .element[data-type=video] video {
 	width: 100%;
